@@ -1,0 +1,9 @@
+<h2>POSTS INDEX</h2>
+
+{{#each post in model}}
+  <p>
+    {{#link-to "posts.show" post}}
+      {{post.title}}
+    {{/link-to}}
+  </p>
+{{/each}}

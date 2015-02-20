@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Post.create(title: "Using Ember With Rails", username: "BradySTI", link: "https://www.airpair.com/ember.js/posts/top-mistakes-ember-rails", description: "useful stuff.  Can be headache :(")
+Post.create(title: "Making A Reddit Clone", username: "NinaSmile", link: "http://ruby.about.com/od/redditclone/", description: "tutorial on making a reddit clone with rails!")
