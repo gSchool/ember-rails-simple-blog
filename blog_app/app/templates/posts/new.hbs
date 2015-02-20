@@ -1,0 +1,8 @@
+<h2>New Post</h2>
+
+{{input value=model.title placeholder="title"}}
+{{input value=model.username placeholder="username"}}
+{{input value=model.link placeholder="link"}}
+{{textarea value=model.description placeholder="description"}}
+
+<button {{action "createPost" model}}>Submit</button>
