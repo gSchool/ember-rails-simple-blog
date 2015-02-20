@@ -1,1 +1,9 @@
-{{outlet}}
+<h2><a {{bind-attr href=model.link}}>{{model.title}}</a></h2>
+
+<h5>Submitted By {{model.username}}</h5>
+
+<p>
+  {{model.description}}
+</p>
+
+{{link-to 'Back' 'posts.index'}}
