@@ -12,8 +12,14 @@
 
 {{link-to 'Edit' 'posts.edit' model}}
 
-<h3>COMMENTS!!!</h3>
+<p>
+  {{link-to "Comment on this post" 'comments.new'}}
+</p>
 
-{{#each comment in model.comments}}
-<li><strong>{{comment.username}}</strong> - {{comment.body}}</li>
-{{/each}}
+<p>
+  {{link-to "View Comments" 'comments.index'}}
+</p>
+
+<h3>COMMENTS (STILL ON SHOW PAGE)</h3>
+
+{{outlet}}
