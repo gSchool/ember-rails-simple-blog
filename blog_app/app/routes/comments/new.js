@@ -8,7 +8,6 @@ export default Ember.Route.extend({
   actions: {
     createComment: function(model){
       var _this = this;
-      var post = this.modelFor('posts/show');
       model.save().then(function(){
         _this.transitionTo('comments.index')
       });

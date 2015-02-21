@@ -9,6 +9,11 @@ class CommentsController < ApplicationController
     end
   end
 
+  def destroy
+    Comment.find(params[:id]).destroy
+    head :no_content
+  end
+
   private
   def comment_params
     params.require(:comment).permit(:post_id, :username, :body)
