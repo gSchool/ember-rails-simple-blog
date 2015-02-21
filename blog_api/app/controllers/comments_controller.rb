@@ -14,6 +14,13 @@ class CommentsController < ApplicationController
     head :no_content
   end
 
+  def update
+    comment = Comment.find(params[:id])
+    if comment.update(comment_params)
+      render json: comment
+    end
+  end
+
   private
   def comment_params
     params.require(:comment).permit(:post_id, :username, :body)
