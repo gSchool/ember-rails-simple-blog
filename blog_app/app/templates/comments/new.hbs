@@ -1,7 +1,3 @@
 <h1>NEW COMMENT FORM</h1>
 
-
-{{input value=model.username placeholder="username"}}
-{{textarea value=model.body placeholder="comment"}}
-
-<button {{action "createComment" model}}>Submit</button>
+{{partial 'comments/form'}}
